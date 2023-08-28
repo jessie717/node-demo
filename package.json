@@ -1,0 +1,33 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "pm2 start ecosystem.config.js --env dev",
+    "test": "pm2 start ecosystem.config.js --env test",
+    "pro": "pm2 start ecosystem.config.js --env pro",
+    "logs": "pm2 logs",
+    "stop": "pm2 stop ecosystem.config.js"
+  },
+
+  "keywords": [
+    "nodejs",
+    "koa"
+  ],
+  "author": "jessie",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-cors": "^0.0.16",
+    "koa-helmet": "^7.0.2",
+    "koa-jwt": "^4.0.4",
+    "koa-router": "^12.0.0",
+    "koa-static-cache": "^5.1.4",
+    "log4js": "^6.9.1",
+    "mongoose": "^7.4.5",
+    "nodemon": "^3.0.1"
+  }
+}
